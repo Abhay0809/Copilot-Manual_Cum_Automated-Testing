@@ -1,0 +1,105 @@
+{
+  "executedAt": "2026-03-26T18:34:09.613Z",
+  "baseUrl": "https://automationexercise.com/",
+  "browser": "Chromium (Playwright)",
+  "os": "Windows",
+  "scope": [
+    "SCN-LOGIN-01",
+    "SCN-LOGIN-07",
+    "SCN-LOGIN-09",
+    "SCN-LOGIN-02",
+    "SCN-LOGIN-04",
+    "SCN-LOGIN-03",
+    "SCN-LOGIN-11"
+  ],
+  "dataUsers": [
+    {
+      "user_id": "U001",
+      "email": "user1.qa@example.com"
+    },
+    {
+      "user_id": "U002",
+      "email": "user2.qa@example.com"
+    },
+    {
+      "user_id": "U003",
+      "email": "user3.qa@example.com"
+    },
+    {
+      "user_id": "U004",
+      "email": "user4.qa@example.com"
+    },
+    {
+      "user_id": "U005",
+      "email": "user5.qa@example.com"
+    }
+  ],
+  "bootstrap": {
+    "created": true,
+    "reason": "Created during execution bootstrap"
+  },
+  "results": [
+    {
+      "scenarioId": "SCN-LOGIN-01",
+      "title": "Valid login succeeds",
+      "status": "Passed",
+      "observed": "Logged in indicator visible.",
+      "expected": "User should be authenticated and shown as logged in.",
+      "reproRate": "1/1"
+    },
+    {
+      "scenarioId": "SCN-LOGIN-07",
+      "title": "Post-login redirect",
+      "status": "Passed",
+      "observed": "Current URL after login: https://automationexercise.com/",
+      "expected": "User should be redirected away from login page after successful login.",
+      "reproRate": "1/1"
+    },
+    {
+      "scenarioId": "SCN-LOGIN-09",
+      "title": "Logout invalidates session",
+      "status": "Passed",
+      "observed": "After logout URL: https://automationexercise.com/, logged-in indicator visible after back: false",
+      "expected": "After logout, authenticated pages should not be accessible via browser back navigation.",
+      "reproRate": "1/1"
+    },
+    {
+      "scenarioId": "SCN-LOGIN-02",
+      "title": "Invalid password rejection",
+      "status": "Passed",
+      "observed": "Error message shown for invalid password.",
+      "expected": "System should reject invalid password with clear error.",
+      "reproRate": "1/1"
+    },
+    {
+      "scenarioId": "SCN-LOGIN-04",
+      "title": "Empty credential validation",
+      "status": "Passed",
+      "observed": "Required flags - email: true, password: true",
+      "expected": "Email and password fields should enforce non-empty validation.",
+      "reproRate": "1/1"
+    },
+    {
+      "scenarioId": "SCN-LOGIN-03",
+      "title": "Unregistered email rejection",
+      "status": "Passed",
+      "observed": "Error shown for unregistered account.",
+      "expected": "System should reject unregistered email login attempt.",
+      "reproRate": "1/1"
+    },
+    {
+      "scenarioId": "SCN-LOGIN-11",
+      "title": "Repeated failed attempts keep UI stable",
+      "status": "Passed",
+      "observed": "Failed attempt errors visible: 5/5, UI still interactive: true",
+      "expected": "Repeated failed attempts should show stable failure feedback without UI hang/crash.",
+      "reproRate": "5/5"
+    }
+  ],
+  "summary": {
+    "total": 7,
+    "passed": 7,
+    "failed": 0,
+    "failedScenarioIds": []
+  }
+}

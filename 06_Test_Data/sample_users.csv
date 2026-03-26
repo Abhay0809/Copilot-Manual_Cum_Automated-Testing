@@ -1,0 +1,6 @@
+user_id,full_name,email,password,phone,address_line1,city,state,postal_code,country
+U001,Aarav Sharma,user1.qa@example.com,Qa@12345,+919900000001,12 Lake View Road,Bengaluru,Karnataka,560001,India
+U002,Sana Khan,user2.qa@example.com,Qa@12345,+919900000002,44 Park Street,Mumbai,Maharashtra,400001,India
+U003,Rohan Mehta,user3.qa@example.com,Qa@12345,+919900000003,21 MG Road,Pune,Maharashtra,411001,India
+U004,Neha Iyer,user4.qa@example.com,Qa@12345,+919900000004,9 Residency Layout,Chennai,Tamil Nadu,600001,India
+U005,Vikram Patel,user5.qa@example.com,Qa@12345,+919900000005,77 River Front,Ahmedabad,Gujarat,380001,India
